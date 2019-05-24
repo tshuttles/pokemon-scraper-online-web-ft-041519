@@ -24,7 +24,7 @@ class Pokemon
     sql = <<-SQL
       SELECT *
       FROM pokemon 
-      WHERE id = ? 
+      WHERE pokemon.id = ? 
       LIMIT 1 
     SQL
     
