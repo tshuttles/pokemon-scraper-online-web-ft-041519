@@ -32,11 +32,4 @@ class Pokemon
       self.new_from_db(row)
     end.first
   end 
-  
-  def self.new_from_db(row)
-    id = row[0]
-    name =  row[1]
-    type = row[2]
-    self.new(id, name, type, db) 
-  end 
 end
