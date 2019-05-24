@@ -17,7 +17,7 @@ class Pokemon
     SQL
           
     db.execute(sql, name, type)
-    @id = db.execute("SELECT ")
+    @id = db.execute("SELECT last_insert_rowid() FROM students")[0][0]
   end 
   
   def self.find 
