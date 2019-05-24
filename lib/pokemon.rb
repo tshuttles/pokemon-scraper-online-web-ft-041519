@@ -17,7 +17,7 @@ class Pokemon
     SQL
           
     db.execute(sql, name, type)
-    @id = 
+    @id = db.execute
   end 
   
   def self.find 
