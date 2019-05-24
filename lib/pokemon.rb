@@ -10,7 +10,7 @@ class Pokemon
     @db = db 
   end 
   
-  def self.save(name, type, db)
+  def self.save(id, name, type)
     if self.id
       self.update
     else
