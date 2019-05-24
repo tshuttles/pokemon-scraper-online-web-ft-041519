@@ -28,7 +28,7 @@ class Pokemon
       LIMIT 1 
     SQL
     
-    DB[:conn].execute(sql, id).map do |row|
+    db.execute(sql, id).map do |row|
       self.new_from_db(row)
     end 
   end 
